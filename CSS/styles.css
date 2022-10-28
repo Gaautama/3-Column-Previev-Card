@@ -1,0 +1,118 @@
+body {
+  color: #fff;
+}
+
+/***************************** Class *****************************/
+
+/**************************** General ****************************/
+.conteiner {
+  width: 300px;
+  height: 1200px;
+  margin: 15rem auto;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.first {
+  background-color: #E28525;
+  grid-row-start: 1/2;
+}
+
+.second {
+  background-color: #016972;
+  grid-row-start: 2/3;
+}
+
+.third {
+  background-color: #01413F;
+  grid-row-start:  3;
+}
+
+.first,
+.second,
+.third {
+  padding: 2rem;
+}
+
+/***************************** Info ******************************/
+.icon img {
+  width: 30%;
+  padding-top: 0.5rem;
+}
+
+.title {
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+  margin: 1.7rem auto;
+}
+
+.description {
+  font-size: 12px;
+  font-weight: lighter;
+  padding-bottom: 2.5rem;
+}
+
+.description,
+.btn {
+  font-family: 'Lexend Deca';
+}
+
+.btn {
+  background-color: #fff;
+  font-size: 14px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+
+.first .btn {
+  color: #E28525;
+}
+
+.second .btn {
+  color: #016972;
+}
+
+.third .btn {
+  color: #01413F;
+}
+
+/***************************** Hover *****************************/
+.btn:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: none;
+}
+
+/************************** Media Query **************************/
+@media screen and (min-width: 1440px) {
+  .conteiner {
+    width: 700px;
+    height: 400px;
+    margin: 15rem auto;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    display: grid;
+    grid-template-rows: none;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .first {
+    grid-row: 1;
+    grid-column-start: 1/2;
+  }
+
+  .second {
+    grid-row: 1;
+    grid-column-start: 2/3;
+  }
+
+  .third {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+}
